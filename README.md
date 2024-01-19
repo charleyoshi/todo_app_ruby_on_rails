@@ -4,11 +4,11 @@ This Todo App is a simple yet powerful task management application built on the 
 
 ## Features
 
-- 📚**Categories**: Tasks can be grouped into categories to help users better organize their to-do list. Users can create, edit, and delete categories to suit their needs.
+- 📚 **Categories**: Tasks can be grouped into categories to help users better organize their to-do list. Users can create, edit, and delete categories to suit their needs.
 
-- 📝**Task Management**: Users can create new tasks, edit existing ones, mark tasks as complete, and delete tasks. The tasks are organized into categories for better organization.
+- 📝 **Task Management**: Users can create new tasks, edit existing ones, mark tasks as complete, and delete tasks. The tasks are organized into categories for better organization.
 
-- 🛠️**Responsive Design**: The application is built with a responsive design, ensuring a seamless experience across various devices, including desktops, tablets, and mobile phones.
+- 🛠️ **Responsive Design**: The application is built with a responsive design, ensuring a seamless experience across various devices, including desktops, tablets, and mobile phones.
 
 
 ## Requirements
