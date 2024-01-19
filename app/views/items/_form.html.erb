@@ -1,0 +1,7 @@
+<%= form_with model: [ @todo, @todo.items.build ], :html => {:class => "itemForm", autocomplete: "off" }  do |form| %>
+  <%= form.text_field :name, placeholder: "Add New Task" %>
+  <%= form.submit  "+" %>
+<% end %>
+
+
+

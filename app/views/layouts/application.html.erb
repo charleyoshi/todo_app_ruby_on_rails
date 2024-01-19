@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TodoApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+
+  <body>
+    <header>
+        <a class="navItem" href="/">
+          <span class="headline">To-do List on Rails</span>
+        </a>
+        <nav>
+            <a class="navItem" href="/">Home</a>
+            <a class="navItem" href="/about">About</a> 
+        </nav>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+    <footer>
+    <span>
+        Charley Yoshi
+    </span>
+    <span>
+        &#9400; Copyright 2024
+    </span>
+</footer>
+    
+  </body>
+</html>

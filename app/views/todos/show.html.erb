@@ -1,0 +1,41 @@
+<h1><%= @todo.name %></h1>
+
+<p><%= @todo.description %></p>
+
+
+
+<section class="s1">
+        <%= render 'items/form' %>
+</section>
+
+<section class="s2">
+        <h4>Ongoing</h4>
+        <%# if count == 0, display empty message  %>
+        <% if @todo.items.where(:done => false).count > 0 %>  
+                <%= render @todo.items.where(:done => false) %>
+        <% else %>
+                <div class="emptyMessage">Your to-do list is empty.</div>
+        <% end %>
+
+</section>
+
+<section class="s3">
+        <h4>Completed</h4>
+        <% if @todo.items.where(:done => true).count > 0 %>  
+                <%= render @todo.items.where(:done => true) %>
+        <% else %>
+                <div class="emptyMessage">Your completed list is empty.</div>
+        <% end %>
+</section>
+
+
+
+
+<%# Edit | Delete  %>
+<br/>
+<%= link_to "Edit", edit_todo_path(@todo) %>
+|
+<%= link_to "Delete #{@todo.name}", todo_path(@todo), data: {
+        turbo_method: :delete,
+        turbo_confirm: "Are you sure to delete #{@todo.name}? All tasks under #{@todo.name} will also be deleted."
+        } %>

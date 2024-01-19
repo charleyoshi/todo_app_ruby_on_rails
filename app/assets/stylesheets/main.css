@@ -1,0 +1,351 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@300;400;500;600;800&family=VT323&display=swap');
+
+:root {
+    --primary-background: whitesmoke;
+    --secondary-background: #ececec;
+    --tertiary-background: lightgrey;
+
+    --primary-border: black;
+
+    --primary-text: darkcyan;
+    --secondary-text: dimgrey;
+    --tertiary-text: grey;
+
+    --link-color: royalblue;
+    --link-hover: #1e549f;
+
+    --success: #1aac83;
+    --error: #e7195a;
+}
+
+body {
+    font-family: "Space Mono";
+    background: var(--primary-background);
+    margin: 0;
+    color: var(--primary-text);
+    transition: all 1s ease-in-out;
+    text-align: center;
+    height: 100%;
+}
+
+  
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+}
+
+.error {
+    font-size: small;
+    color: var(--error);
+}
+
+/* Header, nav */
+header {
+    background-color: whitesmoke;
+    border-bottom: 0.1px grey solid;
+    padding: 28px;
+    text-align: left;
+}
+
+.headline {
+    font-weight: bold;
+    font-size: larger;
+    color: var(--primary-text);
+}
+
+header nav {
+    float: right;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rosybrown;
+    padding: 0 8px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--tertiary-text);
+}
+
+/* Footer  */
+footer {
+    background-color: azure;
+    bottom: 0;
+    border-top: 1px black solid;
+    padding: 48px;
+}
+
+footer>span {
+    padding: 0 48px;
+}
+
+
+/* main */
+main {
+    border: solid;
+    background-color: aliceblue;
+    padding: 0 0 48px 0;
+    min-height: 70%;
+    
+}
+
+section {
+    width: 68%;
+    margin: 38px auto;
+    padding: 18px;
+    border: 0.1px gray solid;
+    border-radius: 8px;
+}
+
+/* item */
+h4 {
+    /* padding-bottom: 12px; */
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.taskItem {
+    border: 1px grey solid;
+    border-radius: 4px;
+    width: 320px;
+    max-width: 80%;
+    padding: 12px 4px;
+    margin: 6px auto;
+    display: flex;
+}
+
+.taskItem * {
+    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.mark {
+    float: left;
+    width: 8%;
+}
+
+.markDoneBtn,
+.markUndoneBtn {
+    border-radius: 50px;
+    color: #35d399;
+    cursor: pointer;
+}
+
+.markDoneBtn:hover {
+    background-color: #35d399;
+    color: white;
+}
+
+.markUndoneBtn {
+    color: grey;
+}
+
+.markUndoneBtn:hover {
+    background-color: grey;
+    color: white;
+}
+
+.bin {
+    float: right;
+    width: 8%;
+}
+
+.binBtn {
+    color: tomato;
+}
+
+.binBtn:hover {
+    border-radius: 4px;
+    background-color: tomato;
+    color: white;
+}
+
+.no-hover {
+    pointer-events: none;
+}
+
+.icons {
+    cursor: pointer;
+}
+
+.taskNameDiv {
+    display: table;
+    width: 80%;
+    margin: 0 4px;
+    overflow: scroll;
+}
+
+.taskNameDiv span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.taskNameDiv .completed {
+    color: grey;
+}
+
+
+/* item form  */
+
+.s1 {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.s1>* {
+    margin: 0 6px;
+}
+
+.s1 form>* {
+    margin: 0 4px;
+}
+
+.itemForm #item_name, .todoTable input {
+    padding: 12px 20px;
+    border: 0.1px solid gray;
+    border-radius: 4px;
+    outline: none;
+    color: lightslategray;
+    background-color: aliceblue;
+}
+
+.itemForm input[type=submit] {
+    border-radius: 50%;
+    border: none;
+    background-color: #35d399;
+    color: white;
+    font-size: large;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.itemForm input[type=submit]:hover {
+    background-color: #1aac83;
+    transition: 0.3s;
+}
+
+
+::placeholder {
+    text-align: center;
+}
+
+
+.emptyMessage {
+    color: grey;
+    font-size: small;
+    margin: 28px 0;
+}
+
+
+
+/* Todo  */
+
+/* new  */
+.getStartedBtn, .createTodoBtn {
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: 2px steelblue solid;
+    background-color: transparent;
+    cursor: pointer;
+    color: steelblue;
+    margin: 28px auto;
+    transition: 0.3s;
+
+}
+
+.getStartedBtn:hover, .createTodoBtn:hover {
+    background-color: steelblue;
+    color: white;
+    transition: 0.3s;
+}
+
+.createTodoBtn {
+    margin: auto;
+    font-size: large;
+}
+
+
+/* new todo table */
+.todoTable {
+    margin: 28px auto;
+}
+
+.todoTable tr td{
+    border-right: 12px transparent solid;
+    border-bottom: 8px transparent solid;
+}
+
+
+/* todo in a list */
+.todoWrapper {
+    margin-top: 28px;
+    padding: 12px;
+}
+
+.todo {
+    width: 26%;
+    margin: auto;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: larger;
+    transition: 0.3s;
+}
+
+.todo:hover {
+    color: var(--primary-text);
+    transition: 0.3s;
+    
+}
+
+.todo > a {
+    color: tomato;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.todo > a:hover {
+    text-decoration: underline;
+}
+
+
+/* About page */
+
+.aboutTable,
+.aboutTable td {
+    margin: auto;
+    border-collapse: collapse;
+    border: 0.1px grey solid;
+    width: 52%;
+    padding: 12px;
+}
+
+.aboutTable tr td:first-child {
+    width: 16px;
+    min-width: 16px;
+    max-width: 16px;
+    word-break: break-all;
+}
+
+.aboutTable tr td:last-child {
+    text-align: left;
+    font-size: small;
+}
+
+.contentTitle {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.aboutTable tr {
+    height: 78px;
+}

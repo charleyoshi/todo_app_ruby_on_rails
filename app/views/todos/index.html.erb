@@ -1,0 +1,13 @@
+<br>
+<br>
+<%= link_to "New", new_todo_path, :class => "getStartedBtn" %>
+<br>
+
+
+<div class="todoWrapper">
+  <% @todos.each do |todo| %>
+    <div class="todo">
+        <%= link_to todo.name, todo %>
+    </div>
+  <% end %>
+</div>
