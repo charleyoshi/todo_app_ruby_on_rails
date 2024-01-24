@@ -1,3 +1,4 @@
+# Todo Controller
 class TodosController < ApplicationController
   def index
     @todos = Todo.all
