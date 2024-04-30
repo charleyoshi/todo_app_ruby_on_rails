@@ -2,6 +2,8 @@
 
 This Todo App is a simple yet powerful task management application built on the [Ruby on Rails](https://rubyonrails.org/) framework. It provides users with the ability to [CRUD](https://www.codecademy.com/article/what-is-crud) - create, update, and delete tasks, as well as mark tasks as complete. The application follows the [MVC](https://www.codecademy.com/article/mvc) (Model-View-Controller) architecture, making it easy to understand and extend.
 
+![featureImage](https://github.com/charleyoshi/todo_app_ruby_on_rails/assets/92558610/9fb4241c-2837-47cd-bfed-16336c3616e0)
+
 ## Features
 
 - 📚 **Categories**: Tasks can be grouped into categories to help users better organize their to-do list. Users can create, edit, and delete categories to suit their needs.
